@@ -1,0 +1,19 @@
+{
+  "shape": {
+    "id": {
+      "separator": ""
+    }
+  },
+  "mode": {
+    "symbol": {
+      "dest": "../packages/composer/theme/Resources/Public/Icons/Generated/Default/",
+      "sprite": "sprite-default.svg",
+      "prefix": ".icon-default-%s",
+      "render": {
+        "scss": {
+          "dest": "../../../../Private/SCSS/Frontend/svg-sprite/_icon-default.scss"
+        }
+      }
+    }
+  }
+}
