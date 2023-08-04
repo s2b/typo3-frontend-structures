@@ -1,0 +1,27 @@
+{
+  "name": "build",
+  "version": "1.0.0",
+  "description": "Project build tools. SCSS builder with dart-sass, autoprefixer, sourcemaps and watch.",
+  "main": "index.js",
+  "scripts": {
+    "svg:build": "./svg-build.sh",
+    "css:build": "./scss-build.sh build",
+    "css:watch": "./scss-build.sh watch",
+    "scss:lint": "cd ../web && ../build/node_modules/.bin/stylelint \"packages/composer/sitepackage/Resources/Private/SCSS/**/*.scss\"",
+    "scss:fix": "cd ../web && ../build/node_modules/.bin/stylelint --fix \"packages/composer/sitepackage/Resources/Private/SCSS/**/*.scss\""
+  },
+  "author": "Manuel Munz",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.8",
+    "nodemon": "^2.0.19",
+    "postcss": "^8.4.14",
+    "postcss-cli": "^10.0.0",
+    "stylelint": "^14.14.0",
+    "stylelint-config-recommended-scss": "^8.0.0",
+    "svg-sprite": "^2.0.0"
+  },
+  "browserslist": [
+    "defaults"
+  ]
+}
